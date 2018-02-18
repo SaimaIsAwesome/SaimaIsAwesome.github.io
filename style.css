@@ -1,8 +1,32 @@
 img {
-    width: 200px;
-}
-body { 
-    text-align: center; 
-    font-family: fantasy;
+    height: 325px; width: 400px;
 }
 
+body {
+    text-align: center;
+    font-family: fantasy;
+    color: white;
+    background-image: url("http://49.media.tumblr.com/78a06dc6ba9d7551a14c84fd6120c314/tumblr_o077h1LIsX1rblfxvo1_500.gif");
+    background-size: cover;
+}
+
+audio {
+    display: none;
+}
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; 
+    animation: 2s linear infinite condemned_blink_effect;
+}
+       
+@-webkit-keyframes condemned_blink_effect {
+    0% {visibility: hidden;}
+    50% {visibility: hidden;}
+    100% {visibility: visible;}
+}
+
+@keyframes condemned_blink_effect {
+    0% {visibility: hidden;}
+    50% {visibility: hidden;}
+    100% {visibility: visible;}
+}
